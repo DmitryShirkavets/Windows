@@ -1,0 +1,35 @@
+.cards{
+    padding-top: 70px;
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        
+        &-item{
+            margin-left: 65px;
+            position: relative;
+
+            &::before{
+                content: "";
+                display: block;
+                width: 166px;
+                height: 2px;
+                background-color: $accentColor;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &-title{
+            @include text(30px, 700, 30px, $textColor);
+            margin-bottom: 18px;
+        }
+
+        &-text{
+            @include text(20px, 400, 27px, $textColor);
+            opacity: 0.8;
+        }
+    }
+}
