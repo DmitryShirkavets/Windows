@@ -1,0 +1,21 @@
+.dignity{
+    padding-top: 130px;
+
+    &__title{
+        padding-left: 196px;
+        position: relative;
+        @include text(40px, 800, 54px, $textColor);
+
+        &::before{
+            content: "";
+            display: block;
+            width: 166px;
+            height: 2px;
+            background-color: $accentColor;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}

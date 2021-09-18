@@ -1,0 +1,130 @@
+.footer{
+    background-color: #83AEAD;
+    padding-top: 141px;
+    padding-bottom: 112px;
+
+    &__wrapper{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__about{
+        &-title{
+            @include text(18px, 700, 24px, $textColor);
+            margin-bottom: 30px;
+        }
+
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-item{
+            &:first-child{
+                border-bottom: 1px solid #2F3B3FCC;
+            }
+        }
+
+        &-link{
+            @include text(14px, 400, 19px, $textColor);
+            opacity: 0.8;
+        }
+    }
+
+    &__menu{
+        &-title{
+            @include text(18px, 700, 24px, $textColor);
+            margin-bottom: 30px;
+        }
+
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        &-link{
+            @include text(14px, 400, 19px, $textColor);
+            opacity: 0.8;
+        }
+    }
+
+    &__contacts{
+        &-title{
+            @include text(18px, 700, 24px, $textColor);
+            margin-bottom: 30px;
+        }
+
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+        }
+
+        &-item{
+            padding-left: 25px;
+            position: relative;
+
+            &:first-child{
+                &::before{
+                    content: "";
+                    display: block;
+                    background-image: url('./../images/location.png');
+                    background-size: 18px 20px;
+                    width: 18px;
+                    height:  20px;
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                }
+            }
+
+            &:last-child{
+                &::before{
+                    content: "";
+                    display: block;
+                    background-image: url('./../images/Call.png');
+                    background-size: 18px 20px;
+                    width: 18px;
+                    height:  20px;
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                }
+            }
+        }
+
+        &-link{
+            @include text(14px, 400, 19px, $textColor);
+            opacity: 0.8;
+        }
+    }
+
+    &__button{
+        position: absolute;
+        right: 0;
+        bottom: -52px;
+        border: none;
+        background: $textColor;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        @include text(18px, 700, 24px, $textColorLight);
+        padding: 17px 12px;
+    }
+}
+
+.socials{
+    &__title{
+        @include text(18px, 700, 24px, $textColor);
+        margin-bottom: 30px;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        gap: 54px;
+    }
+}

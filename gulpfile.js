@@ -101,7 +101,7 @@ function css(cb) {
             cascade: true
         }))
         .pipe(cssbeautify())
-        .pipe(concat('style.css'))
+        .pipe(concat('main.css'))
         .pipe(dest(path.build.css))
         .pipe(cssnano({
             zindex: false,
@@ -137,7 +137,7 @@ function cssWatch(cb) {
         .pipe(sass({
             includePaths: './node_modules/'
         }))
-        .pipe(concat('style.css'))
+        .pipe(concat('main.css'))
         .pipe(rename({
             suffix: ".min",
             extname: ".css"
