@@ -1,6 +1,6 @@
 .header{
     &__top{
-        margin-top: 16px;
+        padding-top: 16px;
         
         &-wrapper{
             display: flex;
@@ -60,8 +60,9 @@
     }
 
     &__content{
+        margin-top: 100px;
+
         &-wrapper{
-            margin-top: 100px;
             height: 594px;
             position: relative;
 

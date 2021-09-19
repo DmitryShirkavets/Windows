@@ -1,0 +1,114 @@
+.about{
+    padding: 130px 0;
+
+    &__title{
+        padding-left: 196px;
+        position: relative;
+        @include text(40px, 800, 54px, $textColor);
+
+        &::before{
+            content: "";
+            display: block;
+            width: 166px;
+            height: 2px;
+            background-color: $accentColor;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__wrapper{
+        margin-top: 70px;
+        background-image: url('./../images/about.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        border-radius: $borderRadius;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__text{
+        width: 558px;
+        @include text(24px, 400, 32px, $textColor);
+        
+        span{
+            @include text(24px, 700, 32px, $textColor);
+        }
+
+        &:first-child{
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list{
+        width: 558px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 70px;
+        
+        &-item{
+            padding-left: 116px;
+            position: relative;
+
+            &::before{
+                content: "";
+                display: block;
+                width: 50px;
+                height: 47px;
+                background-image: url('./../images/materials1.svg');
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+
+            &:nth-child(2){
+                &::before{
+                    width: 44px;
+                    height: 46px;
+                    background-image: url('./../images/materials2.svg');
+                }
+            }
+
+            &:last-child{
+                &::before{
+                    width: 50px;
+                    height: 47px;
+                    background-image: url('./../images/materials3.svg');
+                }
+            }
+        }
+
+        &-title{
+            @include text(30px, 700, 41px, $textColor);
+        }
+
+        &-text{
+            @include text(22px, 400, 30px, $textColor);
+        }
+    }
+
+    &__button{
+        background-color: $accentColor;
+        height: 71px;
+        width: 247px;
+        border: none;
+        border-radius: $borderRadius;
+        @include text(20px, 600, 27px, $textColorLight);
+
+        &:last-child{
+            background-color: inherit;
+            border: 2px solid $textColor;
+            @include text(20px, 600, 27px, $textColor);
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        gap: 30px;
+    }
+}
