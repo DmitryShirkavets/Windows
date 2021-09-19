@@ -7,18 +7,33 @@
         column-gap: 30px;
         
         &-item{
-            margin-left: 65px;
+            padding-left: 65px;
             position: relative;
 
-            &::before{
-                content: "";
-                display: block;
-                width: 166px;
-                height: 2px;
-                background-color: $accentColor;
-                position: absolute;
-                top: 0;
-                left: 0;
+            &:nth-child(2){
+                &::before{
+                    content: "";
+                    display: block;
+                    background-image: url('./../images/proiz.svg');
+                    width: 35px;
+                    height: 33px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            &:last-child{
+                &::before{
+                    content: "";
+                    display: block;
+                    background-image: url('./../images/payment.svg');
+                    width: 35px;
+                    height: 35px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
             }
         }
 

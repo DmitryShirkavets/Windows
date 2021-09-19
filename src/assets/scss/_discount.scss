@@ -1,0 +1,43 @@
+.discount{
+    background-image: url('./../images/discount.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: $accentColor;
+    // padding-left: 538px;
+
+    .container{
+        position: relative;
+    }
+
+    &__wrapper{
+        height: 373px;
+        padding: 52px 0 52px 391px;
+    }
+
+    &__title{
+        @include text(50px, 700, 68px, $textColorLight);
+        margin-bottom: 52px;
+    }
+
+    &__text{
+        @include text(35px, 600, 47px, $textColorLight);
+        opacity: 0.8;
+        margin-bottom: 60px;
+    }
+
+    &__date{
+        @include text(30px, 400, 40px, $textColorLight);
+        opacity: 0.6;
+    }
+
+    &__button{
+        background-color: $textColor;
+        border-radius: $borderRadius;
+        @include text(20px, 400, 23px, $textColorLight);
+        padding: 29px 32px;
+        border: none;
+        position: absolute;
+        right: 0;
+        bottom: 63px;
+    }
+}
