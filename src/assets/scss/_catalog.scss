@@ -1,0 +1,41 @@
+.catalog{
+    padding-bottom: 100px;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title{
+        padding-left: 196px;
+        position: relative;
+        @include text(40px, 800, 54px, $textColor);
+
+        &::before{
+            content: "";
+            display: block;
+            width: 166px;
+            height: 2px;
+            background-color: $accentColor;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__windows{
+        margin-top: 70px;
+    }
+
+    &__button{
+        @include text(18px, 600, 24px, $textColor);
+        border: 2px solid $textColor;
+        background-color: inherit;
+        padding: 12px 14px;
+        border-radius: $borderRadius;
+        margin-top: 19px;
+        align-self: flex-end;
+        margin-right: 34px;
+    }
+}

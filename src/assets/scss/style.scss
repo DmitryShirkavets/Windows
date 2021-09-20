@@ -53,5 +53,12 @@ body{
 // PRINCIPLES VIEW
 @import './view';
 
+// CATALOG
+@import './catalog';
+// WINDOWS
+@import './windows';
+// SPECIFICATIONS
+@import './_specifications.scss';
+
 // FOOTER
 @import './footer';

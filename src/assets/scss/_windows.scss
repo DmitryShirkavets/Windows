@@ -1,0 +1,49 @@
+.windows{
+
+    &__card{
+        padding: 20px;
+        position: relative;
+    }
+
+    &__list{
+        display: flex;
+        gap: 30px;
+
+        &-item{
+            background-color: $accentColor;
+            border-radius: $borderRadius;
+        }
+
+        &-title{
+            @include text(24px, 700, 32px, $textColorLight);
+        }
+
+        &-subtitle{
+            @include text(18px, 300, 24px, $textColorLight);
+            opacity: 0.5;
+        }
+    }
+
+    &__specifications{
+        margin: 30px 0;
+    }
+
+    &__price{
+        @include text(35px, 700, 32px, $textColorLight);
+    }
+
+    &__count{
+        @include text(18px, 300, 24px, $textColorLightness);
+    }
+
+    &__button{
+        position: absolute;
+        padding: 10px 25px;
+        @include text(18px, 600, 24px, $textColorLight);
+        background-color: $textColor;
+        border: none;
+        border-radius: $borderRadius;
+        right: 20px;
+        bottom: 20px;
+    }
+}
